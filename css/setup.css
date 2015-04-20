@@ -1,0 +1,99 @@
+@import url("bootstrap.min.css");
+@import url("jumbotron-narrow.css");
+@import url("slider.css");
+
+/* setup.css */
+
+body {
+  background-color:#BADAD9;
+}
+
+/* Card manipulation */
+
+.card {
+  border-radius: 15px;
+  background-color:#EF7774;
+  width:200px;
+  height:180px;
+  text-align:center;
+  -webkit-transition: background-color 250ms ease-in; /* Saf3.2+, Chrome */
+  -moz-transition: background-color 250ms ease-in; /* FF3.7+ */
+  -o-transition: background-color 250ms ease-in; /* Opera 10.5+ */
+  transition: background-color 500ms ease-in; /* futureproofing */
+}
+
+.card:hover, .card:focus {
+    background-color: #E1F991;
+}
+
+.playing {
+  background-color:#6FE18B;
+}
+
+div.sound-toggle{
+  content:url('../img/vol_on.png');
+  width: 64px;
+  height: 64px;
+}
+div.sound-toggle:before {
+  /*Firefox fix*/
+  content:url('../img/vol_on.png');
+}
+
+div.muted {
+  content:url('../img/vol_off.png');
+}
+
+div.muted:before {
+  content:url('../img/vol_off.png');
+}
+
+img.card-icon {
+  width: 100px;
+  height: 100px;
+  left: 60%;
+}
+
+/* Volume Bar */
+
+#volumebar {
+  display: inline-block;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #333 #333 #777 #333;
+  border-radius:25px;
+  width: 80%;
+  background-color: #8E8D8D;
+  height: 13px;
+}
+
+.slider-track {
+  background: url('../img/bg-track.png') repeat top left;
+}
+
+.volume {
+    float:right;
+    width: 25px;
+    height: 25px;
+    top: -7px;
+    left: 150px;
+    background: url('../img/volume.png') no-repeat 0 -50px;
+    position: absolute;
+}
+
+.slider-handle {
+    /*width: 25px;
+    height: 25px;*/
+    cursor: pointer;
+    background: url('../img/handle.png') no-repeat 50% 50%;
+}
+
+/*NOTE: wtf is slider range?*/
+.slider-range {
+    background: linear-gradient(top, #ffffff 0%,#eaeaea 100%);
+    position: absolute;
+    border: 0;
+    top: 0;
+    height: 100%;
+    border-radius: 25px;
+}

@@ -1,0 +1,1 @@
+{"rain"  : ["mp3/rain.mp3",24,0],"white" : ["mp3/white-noise-01.mp3",5,0], "river" : ["mp3/river-4.mp3",4,0], "wind"  : ["mp3/wind-gust-02.mp3",28,0], "thunder" : ["mp3/thunder.mp3",25,0], "bird"  : ["mp3/bird.mp3",20,0], "chimes" : ["mp3/chimes.mp3",30,0], "night" : ["mp3/night.mp3",30,1]}
