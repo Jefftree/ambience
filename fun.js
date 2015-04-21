@@ -38,7 +38,7 @@ $(function() {
           value+='<div class="volumebar" data-slider-id="volumebar"';
           value+='data-slider-max="100" data-slider-value="' + musicList[music].volume + '"><div class="volume"></div></div>';
           value+='';
-          value+='<audio autoplay><source src=mp3/"' + musicList[music].url + '" type="audio/mpeg" /></audio>';
+          value+='<audio autoplay><source src="mp3/' + musicList[music].url + '" type="audio/mpeg" /></audio>';
           value+='</div>';
 
           return value;
