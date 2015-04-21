@@ -5,15 +5,15 @@ $(function() {
     init: function(){
 
     //Default settings
-    var musicList = {"rain"  : {"url" : "mp3/rain.mp3","volume" : 24,"nowplaying" : 0, "rand": 0},
-                     //"white" : {"url": "mp3/white-noise-01.mp3","volume": 5, "nowplaying" : 0, "rand": 0},
-                     "river" : {"url": "mp3/river-4.mp3","volume": 4, "nowplaying" : 0, "rand": 0},
-                     "wind"  : {"url": "mp3/wind-gust-02.mp3","volume": 28, "nowplaying" : 0, "rand": 0},
-                     "thunder" : {"url": "mp3/thunder.mp3","volume": 25, "nowplaying" : 0, "rand": 0},
-                     "forest"  : {"url": "mp3/bird.mp3","volume": 20, "nowplaying" : 0, "rand": 0},
-                     "chimes" : {"url": "mp3/chimes.mp3","volume": 30, "nowplaying" : 0, "rand": 1},
-                     "ocean" : {"url" : "mp3/ocean.mp3", "volume": 15, "nowplaying" : 0, "rand": 1},
-                     "night" : {"url": "mp3/night.mp3","volume": 30, "nowplaying" : 0, "rand": 1},
+    var musicList = {"rain"    : {"url" : "rain.mp3","volume"           : 24,"nowplaying"  : 0, "rand" : 0},
+                     //"white" : {"url" : "white-noise-01.mp3","volume" : 5, "nowplaying"  : 0, "rand" : 0},
+                     "river"   : {"url" : "river-4.mp3","volume"        : 4, "nowplaying"  : 0, "rand" : 0},
+                     "wind"    : {"url" : "wind-gust-02.mp3","volume"   : 28, "nowplaying" : 0, "rand" : 0},
+                     "thunder" : {"url" : "thunder.mp3","volume"        : 25, "nowplaying" : 0, "rand" : 0},
+                     "forest"  : {"url" : "bird.mp3","volume"           : 20, "nowplaying" : 0, "rand" : 0},
+                     "chimes"  : {"url" : "chimes.mp3","volume"         : 30, "nowplaying" : 0, "rand" : 1},
+                     "ocean"   : {"url" : "ocean.mp3", "volume"         : 15, "nowplaying" : 0, "rand" : 1},
+                     "night"   : {"url" : "night.mp3","volume"          : 30, "nowplaying" : 0, "rand" : 1},
                    };
 
 
@@ -38,7 +38,7 @@ $(function() {
           value+='<div class="volumebar" data-slider-id="volumebar"';
           value+='data-slider-max="100" data-slider-value="' + musicList[music].volume + '"><div class="volume"></div></div>';
           value+='';
-          value+='<audio autoplay><source src="' + musicList[music].url + '" type="audio/mpeg" /></audio>';
+          value+='<audio autoplay><source src=mp3/"' + musicList[music].url + '" type="audio/mpeg" /></audio>';
           value+='</div>';
 
           return value;
